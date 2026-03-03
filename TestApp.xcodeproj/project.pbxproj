@@ -6,15 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4F0D95402F55CA44001073EE /* OpenMeteoSdk in Frameworks */ = {isa = PBXBuildFile; productRef = 4F0D953F2F55CA44001073EE /* OpenMeteoSdk */; };
+		4F0D95412F55CA45001073EE /* OpenMeteoSdk in Frameworks */ = {isa = PBXBuildFile; productRef = 4F0D953F2F55CA44001073EE /* OpenMeteoSdk */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
-		4F0D94D92F55BEA7001073EE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4F0D94C12F55BEA5001073EE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4F0D94C82F55BEA5001073EE;
-			remoteInfo = TestApp;
-		};
-		4F0D94E32F55BEA7001073EE /* PBXContainerItemProxy */ = {
+		4F0D94FD2F55BEDA001073EE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4F0D94C12F55BEA5001073EE /* Project object */;
 			proxyType = 1;
@@ -25,24 +23,52 @@
 
 /* Begin PBXFileReference section */
 		4F0D94C92F55BEA5001073EE /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F0D94D82F55BEA7001073EE /* TestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F0D94E22F55BEA7001073EE /* TestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F0D94F92F55BEDA001073EE /* TestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		4F0D95052F55C0D7001073EE /* Exceptions for "TestApp" folder in "TestAppTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Helpers/AutoLayout.swift,
+				Helpers/DateFormatter.swift,
+				Helpers/Errors/LocationErrors.swift,
+				Helpers/Errors/NetworkError.swift,
+				Helpers/Errors/StorageErrors.swift,
+				Helpers/Errors/URLErrors.swift,
+				Models/Note.swift,
+				Models/Weather.swift,
+				Services/LocationService.swift,
+				Services/NetworkService.swift,
+				Services/Protocols/LocationServiceProtocol.swift,
+				Services/Protocols/NetworkServiceProtocol.swift,
+				Services/Protocols/StorageServiceProtocol.swift,
+				Services/Protocols/WeatherServiceProtocol.swift,
+				Services/StorageService.swift,
+				Services/WeatherService.swift,
+				UseCase/GetWeatherUC.swift,
+				ViewModels/AddNoteVM.swift,
+				ViewModels/DetailVM.swift,
+				ViewModels/ListVM.swift,
+				ViewModels/OnboardingVM.swift,
+				Views/AddNoteView.swift,
+				Views/Components/Onboarding.swift,
+				Views/Components/Splash.swift,
+				Views/DetailView.swift,
+				Views/RootView.swift,
+				Views/SettingsView.swift,
+			);
+			target = 4F0D94F82F55BEDA001073EE /* TestAppTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		4F0D94CB2F55BEA5001073EE /* TestApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				4F0D95052F55C0D7001073EE /* Exceptions for "TestApp" folder in "TestAppTests" target */,
+			);
 			path = TestApp;
-			sourceTree = "<group>";
-		};
-		4F0D94DB2F55BEA7001073EE /* TestAppTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TestAppTests;
-			sourceTree = "<group>";
-		};
-		4F0D94E52F55BEA7001073EE /* TestAppUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TestAppUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -52,20 +78,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F0D95402F55CA44001073EE /* OpenMeteoSdk in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4F0D94D52F55BEA7001073EE /* Frameworks */ = {
+		4F0D94F62F55BEDA001073EE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4F0D94DF2F55BEA7001073EE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				4F0D95412F55CA45001073EE /* OpenMeteoSdk in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,8 +97,6 @@
 			isa = PBXGroup;
 			children = (
 				4F0D94CB2F55BEA5001073EE /* TestApp */,
-				4F0D94DB2F55BEA7001073EE /* TestAppTests */,
-				4F0D94E52F55BEA7001073EE /* TestAppUITests */,
 				4F0D94CA2F55BEA5001073EE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,8 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				4F0D94C92F55BEA5001073EE /* TestApp.app */,
-				4F0D94D82F55BEA7001073EE /* TestAppTests.xctest */,
-				4F0D94E22F55BEA7001073EE /* TestAppUITests.xctest */,
+				4F0D94F92F55BEDA001073EE /* TestAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,56 +130,32 @@
 			);
 			name = TestApp;
 			packageProductDependencies = (
+				4F0D953F2F55CA44001073EE /* OpenMeteoSdk */,
 			);
 			productName = TestApp;
 			productReference = 4F0D94C92F55BEA5001073EE /* TestApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		4F0D94D72F55BEA7001073EE /* TestAppTests */ = {
+		4F0D94F82F55BEDA001073EE /* TestAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4F0D94EF2F55BEA7001073EE /* Build configuration list for PBXNativeTarget "TestAppTests" */;
+			buildConfigurationList = 4F0D94FF2F55BEDA001073EE /* Build configuration list for PBXNativeTarget "TestAppTests" */;
 			buildPhases = (
-				4F0D94D42F55BEA7001073EE /* Sources */,
-				4F0D94D52F55BEA7001073EE /* Frameworks */,
-				4F0D94D62F55BEA7001073EE /* Resources */,
+				4F0D94F52F55BEDA001073EE /* Sources */,
+				4F0D94F62F55BEDA001073EE /* Frameworks */,
+				4F0D94F72F55BEDA001073EE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				4F0D94DA2F55BEA7001073EE /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				4F0D94DB2F55BEA7001073EE /* TestAppTests */,
+				4F0D94FE2F55BEDA001073EE /* PBXTargetDependency */,
 			);
 			name = TestAppTests;
 			packageProductDependencies = (
+				4F0D953F2F55CA44001073EE /* OpenMeteoSdk */,
 			);
 			productName = TestAppTests;
-			productReference = 4F0D94D82F55BEA7001073EE /* TestAppTests.xctest */;
+			productReference = 4F0D94F92F55BEDA001073EE /* TestAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		4F0D94E12F55BEA7001073EE /* TestAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4F0D94F22F55BEA7001073EE /* Build configuration list for PBXNativeTarget "TestAppUITests" */;
-			buildPhases = (
-				4F0D94DE2F55BEA7001073EE /* Sources */,
-				4F0D94DF2F55BEA7001073EE /* Frameworks */,
-				4F0D94E02F55BEA7001073EE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				4F0D94E42F55BEA7001073EE /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				4F0D94E52F55BEA7001073EE /* TestAppUITests */,
-			);
-			name = TestAppUITests;
-			packageProductDependencies = (
-			);
-			productName = TestAppUITests;
-			productReference = 4F0D94E22F55BEA7001073EE /* TestAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -176,11 +170,7 @@
 					4F0D94C82F55BEA5001073EE = {
 						CreatedOnToolsVersion = 26.2;
 					};
-					4F0D94D72F55BEA7001073EE = {
-						CreatedOnToolsVersion = 26.2;
-						TestTargetID = 4F0D94C82F55BEA5001073EE;
-					};
-					4F0D94E12F55BEA7001073EE = {
+					4F0D94F82F55BEDA001073EE = {
 						CreatedOnToolsVersion = 26.2;
 						TestTargetID = 4F0D94C82F55BEA5001073EE;
 					};
@@ -195,14 +185,16 @@
 			);
 			mainGroup = 4F0D94C02F55BEA5001073EE;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4F0D953E2F55CA44001073EE /* XCRemoteSwiftPackageReference "sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4F0D94CA2F55BEA5001073EE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				4F0D94C82F55BEA5001073EE /* TestApp */,
-				4F0D94D72F55BEA7001073EE /* TestAppTests */,
-				4F0D94E12F55BEA7001073EE /* TestAppUITests */,
+				4F0D94F82F55BEDA001073EE /* TestAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -215,14 +207,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4F0D94D62F55BEA7001073EE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4F0D94E02F55BEA7001073EE /* Resources */ = {
+		4F0D94F72F55BEDA001073EE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -239,14 +224,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4F0D94D42F55BEA7001073EE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4F0D94DE2F55BEA7001073EE /* Sources */ = {
+		4F0D94F52F55BEDA001073EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -256,15 +234,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4F0D94DA2F55BEA7001073EE /* PBXTargetDependency */ = {
+		4F0D94FE2F55BEDA001073EE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4F0D94C82F55BEA5001073EE /* TestApp */;
-			targetProxy = 4F0D94D92F55BEA7001073EE /* PBXContainerItemProxy */;
-		};
-		4F0D94E42F55BEA7001073EE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4F0D94C82F55BEA5001073EE /* TestApp */;
-			targetProxy = 4F0D94E32F55BEA7001073EE /* PBXContainerItemProxy */;
+			targetProxy = 4F0D94FD2F55BEDA001073EE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -400,11 +373,14 @@
 				DEVELOPMENT_TEAM = P5FX297WUC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This app needs access to your location to provide accurate weather information for your area.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs access to your location to provide accurate weather information for your area.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -413,12 +389,16 @@
 				PRODUCT_BUNDLE_IDENTIFIER = vc.TestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -432,11 +412,14 @@
 				DEVELOPMENT_TEAM = P5FX297WUC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "This app needs access to your location to provide accurate weather information for your area.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs access to your location to provide accurate weather information for your area.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -445,16 +428,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = vc.TestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
-		4F0D94F02F55BEA7001073EE /* Debug */ = {
+		4F0D95002F55BEDA001073EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -462,21 +449,24 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P5FX297WUC;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = vc.TestAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestApp";
 			};
 			name = Debug;
 		};
-		4F0D94F12F55BEA7001073EE /* Release */ = {
+		4F0D95012F55BEDA001073EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,57 +474,20 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P5FX297WUC;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = vc.TestAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TestApp";
-			};
-			name = Release;
-		};
-		4F0D94F32F55BEA7001073EE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = P5FX297WUC;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = vc.TestAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TestApp;
-			};
-			name = Debug;
-		};
-		4F0D94F42F55BEA7001073EE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = P5FX297WUC;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = vc.TestAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TestApp;
 			};
 			name = Release;
 		};
@@ -559,25 +512,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4F0D94EF2F55BEA7001073EE /* Build configuration list for PBXNativeTarget "TestAppTests" */ = {
+		4F0D94FF2F55BEDA001073EE /* Build configuration list for PBXNativeTarget "TestAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4F0D94F02F55BEA7001073EE /* Debug */,
-				4F0D94F12F55BEA7001073EE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4F0D94F22F55BEA7001073EE /* Build configuration list for PBXNativeTarget "TestAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4F0D94F32F55BEA7001073EE /* Debug */,
-				4F0D94F42F55BEA7001073EE /* Release */,
+				4F0D95002F55BEDA001073EE /* Debug */,
+				4F0D95012F55BEDA001073EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4F0D953E2F55CA44001073EE /* XCRemoteSwiftPackageReference "sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/open-meteo/sdk.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4F0D953F2F55CA44001073EE /* OpenMeteoSdk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F0D953E2F55CA44001073EE /* XCRemoteSwiftPackageReference "sdk" */;
+			productName = OpenMeteoSdk;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4F0D94C12F55BEA5001073EE /* Project object */;
 }
